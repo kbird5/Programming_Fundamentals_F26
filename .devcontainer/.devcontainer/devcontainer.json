@@ -3,7 +3,7 @@
     "build": {
         "dockerfile": "Dockerfile"
     },
-    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}:",
     "postStartCommand": "bash .devcontainer/postStart.sh",
     "customizations": {
         "vscode": {
@@ -14,7 +14,5 @@
             "settings": {
                 "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
                 "python.terminal.activateEnvironment": true
+                
             }
-        }
-    }
-}
